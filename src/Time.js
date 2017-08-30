@@ -1,9 +1,13 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-function Time (props) {
+function Time ({newTime}) {
     return (
-        <h3>props.getTime()</h3>
+        <h3>{newTime}</h3>
     )
 }
+
+
+
+
 
 export default Time;

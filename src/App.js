@@ -6,6 +6,22 @@ import CityName from './CityName.js';
 import Time from './Time.js';
 
 class App extends Component {
+
+
+constructor(props) {
+    super(props);
+    this.state = {
+        currentTime: new Date()
+    }
+}
+
+// _update = (timeDifference) => {
+//     const newTime = new Date(this.state.currentTime.getTime() + timeDiference);
+//     this.setState({
+//         currentTime: newTime
+//     });
+// }
+
   render() {
     return (
       <div className="App">
@@ -17,26 +33,26 @@ class App extends Component {
           <div className="Time-zones">
             <div className="City1">
               <div className="Name">
-              <CityName />
+              <CityName name={'New York'}/>
               </div>
               <div className="Time">
-              <Time />
+              <Time newTime={this.state.currentTime.toLocaleTimeString()}/>
               </div>
             </div>
             <div className="City2">
               <div className="Name">
-              <CityName />
+              <CityName name={'London'}/>
               </div>
               <div className="Time">
-              <Time />
+              <Time newTime={this.state.currentTime.toLocaleTimeString()}/>
               </div>
             </div>
             <div className="City3">
               <div className="Name">
-              <CityName />
+              <CityName name={'Tokyo'}/>
               </div>
               <div className="Time">
-              <Time />
+              <Time newTime={this.state.currentTime.toLocaleTimeString()}/>
               </div>
             </div>
           </div>

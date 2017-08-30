@@ -1,8 +1,8 @@
 import React from 'react'; 
 
-function CityName (props) {
+function CityName ({name}) {
     return (
-        <h3>props.CityName</h3>
+        <h3>{name}</h3>
     )
 }
 

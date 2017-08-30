@@ -5,6 +5,15 @@ import './App.css';
 import CityName from './CityName.js';
 import Time from './Time.js';
 
+// import Clock from './Clock.js';
+
+// const cities = {
+//   Atlanta: new Date(),
+//   'New York': new Date(),
+//   Tokyo: new Date(),
+//   Berlin: new Date(),
+// }
+
 class App extends Component {
 
 

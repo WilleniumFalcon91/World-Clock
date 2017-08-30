@@ -2,7 +2,7 @@ import React from 'react';
 
 function CityName ({name}) {
     return (
-        <h3>{name}</h3>
+        <h3>{name.toUpperCase()}</h3>
     )
 }
 

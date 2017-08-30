@@ -29,7 +29,7 @@ _update = () => {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          <img src="http://bestanimations.com/Earth&Space/Earth/earth-spinning-rotating-animation-24.gif" className="App-logo" alt="logo" />
           <h2>World Clock</h2>
         </div>
         <div className="Data-block">

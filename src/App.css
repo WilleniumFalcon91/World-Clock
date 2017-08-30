@@ -22,3 +22,25 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.Time-zones {
+  border: 1px solid blue;
+}
+
+.City1, .City2, .City3 {
+  border: 1px solid red;
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.Name {
+  margin: 2%;
+  border: 1px solid blue;
+}
+
+.Time {
+  margin: 2%;
+  border: 1px solid green;
+}

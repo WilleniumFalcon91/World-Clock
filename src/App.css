@@ -24,23 +24,21 @@
 }
 
 .Time-zones {
-  border: 1px solid blue;
+  border: 35px solid #222;
 }
 
 .City1, .City2, .City3 {
   border: 1px solid red;
-  margin: 5px;
+  margin: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
 }
 
 .Name {
-  margin: 2%;
   border: 1px solid blue;
 }
 
 .Time {
-  margin: 2%;
   border: 1px solid green;
 }

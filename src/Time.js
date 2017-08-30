@@ -7,7 +7,4 @@ function Time ({newTime}) {
 }
 
 
-
-
-
 export default Time;

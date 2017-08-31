@@ -20,7 +20,8 @@ class App extends Component {
 constructor(props) {
     super(props);
     this.state = {
-        currentTime: new Date()
+        currentTime: new Date(),
+        text: "testing 123"
     }
       this.timerId = setInterval(
           () => this._update(), 1000
@@ -29,7 +30,13 @@ constructor(props) {
 
 _update = () => {
     this.setState({
-        currentTime: new Date()
+        currentTime: new Date(),
+    });
+      // console.log(this.state.currentTime)
+}
+_updateText = (event) => {
+    this.setState({
+        text: event.target.value
     });
       // console.log(this.state.currentTime)
 }
@@ -40,6 +47,9 @@ _update = () => {
         <div className="App-header">
           <img src="http://bestanimations.com/Earth&Space/Earth/earth-spinning-rotating-animation-24.gif" className="App-logo" alt="logo" />
           <h2>World Clock</h2>
+          <input type="text" value={this.state.text} onChange={this._updateText} />
+          <div>{this.state.text}</div>
+
         </div>
         <div className="Data-block">
           <div className="Time-zones">

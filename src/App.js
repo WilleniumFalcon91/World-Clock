@@ -61,6 +61,14 @@ _updateText = (event) => {
               <Time newTime={this.state.currentTime.toLocaleString("en-US", {timeZone: "America/New_York"})}/>
               </div>
             </div>
+            <div className="City1">
+              <div className="Name">
+              <CityName name={'Los Angeles'}/>
+              </div>
+              <div className="Time">
+              <Time newTime={this.state.currentTime.toLocaleString("en-US", {timeZone: "America/Los_Angeles"})}/>
+              </div>
+            </div>
             <div className="City2">
               <div className="Name">
               <CityName name={'London'}/>

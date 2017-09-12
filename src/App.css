@@ -44,3 +44,10 @@
 .Time {
   border: 1px solid green;
 }
+
+.weatherDisplay {
+  float: right;
+  margin-top: -15%;
+  margin-right: 4%;
+  border: 1px solid red;
+}

@@ -5,14 +5,7 @@ import './App.css';
 import CityName from './CityName.js';
 import Time from './Time.js';
 
-// import Clock from './Clock.js';
 
-// const cities = {
-//   Atlanta: new Date(),
-//   'New York': new Date(),
-//   Tokyo: new Date(),
-//   Berlin: new Date(),
-// }
 
 class App extends Component {
 
@@ -21,7 +14,7 @@ constructor(props) {
     super(props);
     this.state = {
         currentTime: new Date(),
-        text: "testing 123"
+        text: "Hello there!"
     }
       this.timerId = setInterval(
           () => this._update(), 1000
@@ -50,6 +43,9 @@ _updateText = (event) => {
           <input type="text" value={this.state.text} onChange={this._updateText} />
           <div>{this.state.text}</div>
 
+        </div>
+        <div className="weatherDisplay">
+          <h1>Weather</h1>
         </div>
         <div className="Data-block">
           <div className="Time-zones">
